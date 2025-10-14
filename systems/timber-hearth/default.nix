@@ -1,0 +1,4 @@
+{scanPaths, ...}: {
+  imports = scanPaths ./.;
+  config = {};
+}
