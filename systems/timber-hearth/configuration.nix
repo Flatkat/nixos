@@ -64,6 +64,7 @@
     unstable.bottles
     godot
     custom-pkgs.vicinae
+    distrobox
 
     #Gayms :3
     custom-pkgs.eden
@@ -72,11 +73,16 @@
     #emulationstation-de
     owmods-gui
     protonup-qt
+    celeste64
+    ryubing
 
     # Retroarch
     (retroarch.withCores (cores: with cores; [
       mgba
     ]))
+
+    # KDE Plasma
+    kdePackages.krohnkite
 
     # CLI
     gh
