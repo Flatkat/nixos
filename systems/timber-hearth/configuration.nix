@@ -75,6 +75,12 @@
     protonup-qt
     celeste64
     ryubing
+    unstable.boilr
+    lutris
+    winetricks # For lutris, thats why its here
+    protontricks
+    unstable.gale
+    prismlauncher
 
     # Retroarch
     (retroarch.withCores (cores: with cores; [
