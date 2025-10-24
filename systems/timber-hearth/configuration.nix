@@ -45,6 +45,7 @@
 
     # Propietary Apps
     obsidian
+    spotify
 
     # Apps
     vlc
@@ -76,13 +77,14 @@
     celeste64
     ryubing
     unstable.boilr
-    winetricks # For lutris, thats why its here
     protontricks
     unstable.gale
     prismlauncher
     heroic
-    rpcs3
+    unstable.rpcs3
     itch
+    rusty-psn-gui
+    cemu
 
     # Retroarch
     (retroarch.withCores (cores: with cores; [
@@ -100,6 +102,7 @@
     carapace
     fastfetch
     hyfetch
+    spicetify-cli
 
     # Shell
     fish
@@ -120,6 +123,44 @@
   ];
 
   programs.steam.enable = true;
+
+  #systemd.user.services.vicinae = {
+  #  Unit = {
+  #    Description = "Vicinae server daemon";
+  #    Documentation = [ "https://docs.vicinae.com" ];
+  #    After = [ "graphical-session.target" ];
+  #    PartOf = [ "graphical-session.target" ];
+  #    BindsTo = [ "graphical-session.target" ];
+  #  };
+  #  Service = {
+  #    EnvironmentFile = pkgs.writeText "vicinae-env" ''
+  #      USE_LAYER_SHELL=${if cfg.useLayerShell then builtins.toString 1 else builtins.toString 0}
+  #    '';
+  #    Type = "simple";
+  #    ExecStart = "${lib.getExe' cfg.package "vicinae"} server";
+  #    Restart = "always";
+  #    RestartSec = 5;
+  #    KillMode = "process";
+  #  };
+  #  Install = lib.mkIf cfg.autoStart {
+  #    WantedBy = [ "graphical-session.target" ];
+  #  };
+  #};
+  
+  # Increase RLIMIT_MEMLOCK for RPCS3, this setting is old and not needed anymore for security apparently
+  security.pam.loginLimits = [
+    {
+      domain = "*";
+      type = "hard";
+      item = "memlock";
+      value = "2100000"; # Roughly 2GB in KB, RPCS3 says to do either this or unlimited, but since im a lil paranoid im not going for the latter
+    }
+    {
+      domain = "*";
+      type = "soft";
+      item = "memlock";
+      value = "2100000";
+    }];
 
   networking.networkmanager.enable = true;
 
