@@ -70,7 +70,7 @@
     #Gayms :3
     custom-pkgs.eden
     pcsx2
-    dolphin-emu
+    unstable.dolphin-emu
     #emulationstation-de
     owmods-gui
     protonup-qt
@@ -93,6 +93,8 @@
 
     # KDE Plasma
     kdePackages.krohnkite
+    kdePackages.applet-window-buttons6
+    kdePackages.wallpaper-engine-plugin
 
     # CLI
     gh
