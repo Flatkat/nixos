@@ -81,7 +81,7 @@
     unstable.gale
     prismlauncher
     heroic
-    unstable.rpcs3
+    rpcs3
     itch
     rusty-psn-gui
     cemu
