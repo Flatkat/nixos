@@ -66,7 +66,7 @@
     unstable.bottles
     godot
     custom-pkgs.vicinae
-    distrobox
+    ente-auth
 
     #Gayms :3
     custom-pkgs.eden
@@ -106,6 +106,7 @@
     fastfetch
     hyfetch
     spicetify-cli
+    android-tools
 
     # Shell
     fish
