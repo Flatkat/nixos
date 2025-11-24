@@ -61,6 +61,7 @@
     libreoffice
     zapzap
     bitwarden-desktop
+    bitwarden-cli
     protonvpn-gui
     unstable.bottles
     godot
@@ -148,6 +149,12 @@
   #    WantedBy = [ "graphical-session.target" ];
   #  };
   #};
+
+  fonts.packages = with pkgs; [
+    inter
+    unstable.nasin-nanpa-ucsur
+    twitter-color-emoji # outdated af i should make my own flake for this
+  ];
   
   # Increase RLIMIT_MEMLOCK for RPCS3, this setting is old and not needed anymore for security apparently
   security.pam.loginLimits = [
