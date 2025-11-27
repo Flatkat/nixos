@@ -68,6 +68,9 @@
     custom-pkgs.vicinae
     ente-auth
 
+    # Need for class
+    unstable.mysql-workbench
+
     #Gayms :3
     custom-pkgs.eden
     pcsx2
@@ -171,6 +174,11 @@
       item = "memlock";
       value = "2100000";
     }];
+
+  services.mysql = {
+    enable = true;
+    package = pkgs.mariadb;
+  };
 
   networking.networkmanager.enable = true;
 
