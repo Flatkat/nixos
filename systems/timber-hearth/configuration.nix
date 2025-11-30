@@ -111,6 +111,8 @@
     hyfetch
     spicetify-cli
     android-tools
+    ffmpeg
+    yt-dlp
 
     # Shell
     fish
