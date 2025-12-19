@@ -70,6 +70,7 @@
 
     # Need for class
     unstable.mysql-workbench
+    python314
 
     #Gayms :3
     custom-pkgs.eden
@@ -82,11 +83,11 @@
     ryubing
     unstable.boilr
     protontricks
-    unstable.gale
+    gale
     prismlauncher
-    heroic
+    unstable.heroic
     rpcs3
-    itch
+    unstable.itch
     rusty-psn-gui
     cemu
 
