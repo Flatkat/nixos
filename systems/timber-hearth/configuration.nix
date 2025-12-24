@@ -55,7 +55,7 @@
     gimp3
     vscode-fhs
     qbittorrent
-    ungoogled-chromium
+    unstable.ungoogled-chromium
     unstable.signal-desktop
     kdePackages.filelight
     libreoffice
