@@ -68,6 +68,8 @@
     custom-pkgs.vicinae
     ente-auth
     jetbrains.idea-community
+    ytmdesktop
+    kdePackages.kamoso
 
     # Need for class
     unstable.mysql-workbench
