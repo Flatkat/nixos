@@ -67,7 +67,7 @@
     godot
     custom-pkgs.vicinae
     ente-auth
-    jetbrains.idea-community
+    jetbrains.idea-oss
     ytmdesktop
     kdePackages.kamoso
 
