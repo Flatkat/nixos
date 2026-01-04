@@ -93,6 +93,7 @@
     unstable.itch
     rusty-psn-gui
     cemu
+    melonDS
 
     # Retroarch
     (retroarch.withCores (cores: with cores; [
