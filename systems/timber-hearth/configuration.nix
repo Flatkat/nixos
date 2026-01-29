@@ -98,6 +98,7 @@
     # Retroarch
     (retroarch.withCores (cores: with cores; [
       mgba
+      gpsp
     ]))
 
     # KDE Plasma
