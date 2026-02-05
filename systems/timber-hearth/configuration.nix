@@ -84,7 +84,6 @@
     protonup-qt
     celeste64
     ryubing
-    unstable.boilr
     protontricks
     gale
     prismlauncher
@@ -94,6 +93,7 @@
     rusty-psn-gui
     cemu
     melonDS
+    sgdboop
 
     # Retroarch
     (retroarch.withCores (cores: with cores; [
