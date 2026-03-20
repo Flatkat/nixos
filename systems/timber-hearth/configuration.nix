@@ -70,6 +70,7 @@
     jetbrains.idea-oss
     ytmdesktop
     kdePackages.kamoso
+    unstable.beeper
 
     # Need for class
     unstable.mysql-workbench
@@ -94,11 +95,13 @@
     cemu
     melonDS
     sgdboop
+    gamescope
 
     # Retroarch
     (retroarch.withCores (cores: with cores; [
       mgba
       gpsp
+      mupen64plus
     ]))
 
     # KDE Plasma
