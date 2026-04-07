@@ -75,6 +75,8 @@
     # Need for class
     unstable.mysql-workbench
     python314
+    maven
+    javaPackages.compiler.temurin-bin.jdk-21
 
     #Gayms :3
     custom-pkgs.eden
