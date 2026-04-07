@@ -141,6 +141,11 @@
     zoxide
   ];
 
+  services.espanso = {
+    enable = true;
+    package = pkgs.espanso-wayland;
+  };
+
   programs.steam.enable = true;
 
   #systemd.user.services.vicinae = {
