@@ -185,6 +185,7 @@
     inter
     unstable.nasin-nanpa-ucsur
     twitter-color-emoji # outdated af i should make my own flake for this
+    sitelen-seli-kiwen # This is like the biggest toki pona font alongside fairfax and i needed smth w ligatures so
   ];
   
   # Increase RLIMIT_MEMLOCK for RPCS3, this setting is old and not needed anymore for security apparently
