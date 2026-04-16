@@ -150,6 +150,13 @@
   };
 
   programs.steam.enable = true;
+  programs.steam.package = pkgs.steam.override { # I will learn how to make flakes, someday
+  extraPkgs = pkgs': with pkgs'; [
+      libice # Ryubing Canary and OpenUtau Beta
+      libsm # Ryubing Canary
+      # Add other libraries as needed
+    ];
+  };
 
   #systemd.user.services.vicinae = {
   #  Unit = {
