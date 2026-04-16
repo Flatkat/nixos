@@ -71,6 +71,7 @@
     ytmdesktop
     kdePackages.kamoso
     unstable.beeper
+    openutau
 
     # Need for class
     unstable.mysql-workbench
