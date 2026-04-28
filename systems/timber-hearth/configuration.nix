@@ -90,7 +90,7 @@
     ryubing
     protontricks
     gale
-    prismlauncher
+    unstable.prismlauncher
     unstable.heroic
     rpcs3
     unstable.itch
