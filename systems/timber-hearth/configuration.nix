@@ -63,7 +63,7 @@
     bitwarden-desktop
     bitwarden-cli
     protonvpn-gui
-    unstable.bottles
+    bottles
     godot
     custom-pkgs.vicinae
     ente-auth
@@ -77,6 +77,7 @@
     unstable.mysql-workbench
     python314
     maven
+    gradle
     javaPackages.compiler.temurin-bin.jdk-21
 
     #Gayms :3
