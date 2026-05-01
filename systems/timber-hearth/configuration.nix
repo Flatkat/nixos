@@ -150,6 +150,16 @@
     package = pkgs.espanso-wayland;
   };
 
+  i18n.inputMethod = {
+    type = "fcitx5";
+    enable = true;
+    fcitx5.waylandFrontend = true;
+    fcitx5.addons = with pkgs; [
+      kdePackages.fcitx5-qt
+      kdePackages.fcitx5-chinese-addons
+    ];
+  };
+
   programs.steam.enable = true;
   programs.steam.package = pkgs.steam.override { # I will learn how to make flakes, someday
   extraPkgs = pkgs': with pkgs'; [
