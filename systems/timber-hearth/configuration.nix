@@ -193,10 +193,18 @@
   #};
 
   fonts.packages = with pkgs; [
+    # sitelen Lasina toki
     inter
-    unstable.nasin-nanpa-ucsur
+    # sitelen Emosi
     twitter-color-emoji # outdated af i should make my own flake for this
-    sitelen-seli-kiwen # This is like the biggest toki pona font alongside fairfax and i needed smth w ligatures so
+    # sitelen pi jan sona nasa
+    nerd-fonts.symbols-only
+    nerd-fonts.jetbrains-mono
+    # sitelen pona
+    unstable.nasin-nanpa-ucsur
+    fairfax
+    fairfax-hd
+    sitelen-seli-kiwen
   ];
   
   # Increase RLIMIT_MEMLOCK for RPCS3, this setting is old and not needed anymore for security apparently
