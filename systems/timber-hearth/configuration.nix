@@ -192,20 +192,50 @@
   #  };
   #};
 
-  fonts.packages = with pkgs; [
-    # sitelen Lasina toki
-    inter
-    # sitelen Emosi
-    twitter-color-emoji # outdated af i should make my own flake for this
-    # sitelen pi jan sona nasa
-    nerd-fonts.symbols-only
-    nerd-fonts.jetbrains-mono
-    # sitelen pona
-    unstable.nasin-nanpa-ucsur
-    fairfax
-    fairfax-hd
-    sitelen-seli-kiwen
-  ];
+  fonts = {
+    packages = with pkgs; [
+      # sitelen Lasina toki
+      inter
+      jetbrains-mono
+      # sitelen Emosi
+      twitter-color-emoji # outdated af i should make my own flake for this
+      # sitelen pi jan sona nasa
+      nerd-fonts.symbols-only
+      nerd-fonts.jetbrains-mono
+      # sitelen pona
+      unstable.nasin-nanpa-ucsur
+      fairfax
+      fairfax-hd
+      sitelen-seli-kiwen
+    ];
+    fontconfig.defaultFonts = {
+      emoji = [
+        "Twitter Color Emoji"
+        "Noto Color Emoji"
+        "nasin-nanpa"
+        "Symbols Nerd Font"
+      ];
+      monospace = [
+        "JetBrains Mono"
+        "Hack"
+        "DejaVu Sans Mono"
+        "nasin-nanpa"
+        "Symbols Nerd Font Mono"
+      ];
+      sansSerif = [
+        "Inter"
+        "Noto Sans"
+        "DejaVu Sans"
+        "nasin-nanpa"
+        "Symbols Nerd Font"
+      ];
+      serif = [
+        "DejaVu Serif"
+        "nasin-nanpa"
+        "Symbols Nerd Font"
+      ];
+    };
+  };
   
   # Increase RLIMIT_MEMLOCK for RPCS3, this setting is old and not needed anymore for security apparently
   security.pam.loginLimits = [
