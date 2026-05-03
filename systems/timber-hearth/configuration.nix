@@ -72,6 +72,8 @@
     kdePackages.kamoso
     unstable.beeper
     openutau
+    fontforge-gtk
+    inkscape
 
     # Need for class
     unstable.mysql-workbench
@@ -79,6 +81,7 @@
     maven
     gradle
     javaPackages.compiler.temurin-bin.jdk-21
+    xmlcopyeditor
 
     #Gayms :3
     custom-pkgs.eden
