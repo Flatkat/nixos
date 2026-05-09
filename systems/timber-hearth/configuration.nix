@@ -210,6 +210,8 @@
       fairfax
       fairfax-hd
       sitelen-seli-kiwen
+      # sitelen pi kulupu CJK
+      noto-fonts-cjk-serif
     ];
     fontconfig.defaultFonts = {
       emoji = [
@@ -224,6 +226,7 @@
         "DejaVu Sans Mono"
         "nasin-nanpa"
         "Symbols Nerd Font Mono"
+        "Fairfax SM HD"
       ];
       sansSerif = [
         "Inter"
@@ -231,11 +234,13 @@
         "DejaVu Sans"
         "nasin-nanpa"
         "Symbols Nerd Font"
+        "Fairfax HD"
       ];
       serif = [
         "DejaVu Serif"
         "nasin-nanpa"
         "Symbols Nerd Font"
+        "Noto Serif CJK JP"
       ];
     };
   };
