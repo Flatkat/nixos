@@ -210,7 +210,8 @@
       fairfax
       fairfax-hd
       sitelen-seli-kiwen
-      # sitelen pi kulupu CJK
+      # sitelen pi kulupu toki CJK
+      noto-fonts-cjk-sans
       noto-fonts-cjk-serif
     ];
     fontconfig.defaultFonts = {
@@ -226,6 +227,7 @@
         "DejaVu Sans Mono"
         "nasin-nanpa"
         "Symbols Nerd Font Mono"
+        "Noto Sans Mono CJK JP"
         "Fairfax SM HD"
       ];
       sansSerif = [
@@ -234,6 +236,7 @@
         "DejaVu Sans"
         "nasin-nanpa"
         "Symbols Nerd Font"
+        "Noto Sans CJK JP"
         "Fairfax HD"
       ];
       serif = [
