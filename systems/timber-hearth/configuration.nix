@@ -130,6 +130,7 @@
     android-tools
     ffmpeg
     yt-dlp
+    pnpm
 
     # Shell
     fish
