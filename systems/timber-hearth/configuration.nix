@@ -227,7 +227,7 @@
       ];
       monospace = [
         "JetBrains Mono"
-        "Hack"b
+        "Hack"
         "DejaVu Sans Mono"
         "nasin-nanpa"
         "Symbols Nerd Font Mono"
