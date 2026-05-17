@@ -74,6 +74,7 @@
     openutau
     fontforge-gtk
     inkscape
+    android-studio
 
     # Need for class
     unstable.mysql-workbench
@@ -147,6 +148,8 @@
     gotop
     zoxide
   ];
+
+  nixpkgs.config.android_sdk.accept_license = true;
 
   services.espanso = {
     enable = true;
@@ -223,7 +226,7 @@
       ];
       monospace = [
         "JetBrains Mono"
-        "Hack"
+        "Hack"b
         "DejaVu Sans Mono"
         "nasin-nanpa"
         "Symbols Nerd Font Mono"
