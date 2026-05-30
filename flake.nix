@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -9,10 +9,6 @@
     lanzaboote = {
       url = "github:nix-community/lanzaboote/v0.4.3";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
-    eden = {
-      url = "github:grantimatter/eden-flake";
-      #inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
     vicinae = {
       url = "github:vicinaehq/vicinae";
@@ -50,9 +46,8 @@
       self = self;
     };
     zen-browser = inputs.zen-browser.packages."${system}".default;
-    eden = inputs.eden.packages."${system}".default;
     vicinae = inputs.vicinae.packages."${system}".default;
-    custom-pkgs = {inherit zen-browser eden vicinae;};
+    custom-pkgs = {inherit zen-browser vicinae;};
   in {
     nixosConfigurations = {
       timber-hearth = nixpkgs.lib.nixosSystem {

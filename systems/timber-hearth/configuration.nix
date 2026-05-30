@@ -35,6 +35,12 @@
     };
   };
 
+  #!Remove whenever bitwarden-desktop updates
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-39.8.10" #!WHY DONT YOU WORK YOU WERE WORKING BEFORE
+  ];
+
+
   services.syncthing.enable = false;
   services.syncthing.user = "flatkat";
 
@@ -55,14 +61,14 @@
     gimp3
     vscode-fhs
     qbittorrent
-    unstable.ungoogled-chromium
+    ungoogled-chromium #!change back to unstable
     unstable.signal-desktop
     kdePackages.filelight
     libreoffice
     zapzap
-    bitwarden-desktop
-    bitwarden-cli
-    protonvpn-gui
+    #unstable.bitwarden-desktop #!!!
+    unstable.bitwarden-cli
+    proton-vpn
     bottles
     godot
     custom-pkgs.vicinae
@@ -85,7 +91,7 @@
     xmlcopyeditor
 
     #Gayms :3
-    custom-pkgs.eden
+    eden
     pcsx2
     unstable.dolphin-emu
     #emulationstation-de
@@ -101,7 +107,7 @@
     unstable.itch
     rusty-psn-gui
     cemu
-    melonDS
+    melonds
     sgdboop
     gamescope
 
