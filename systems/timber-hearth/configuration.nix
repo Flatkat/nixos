@@ -122,6 +122,7 @@
     kdePackages.applet-window-buttons6
     kdePackages.wallpaper-engine-plugin
     kdePackages.qtmultimedia # Needed for Fokus (Pomodoro plasmoid)
+    kdePackages.qtwebengine # Needed for DeepL Plasmoid
 
     # CLI
     gh
