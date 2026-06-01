@@ -66,7 +66,7 @@
     kdePackages.filelight
     libreoffice
     zapzap
-    #unstable.bitwarden-desktop #!!!
+    bitwarden-desktop #!!!
     unstable.bitwarden-cli
     proton-vpn
     bottles
