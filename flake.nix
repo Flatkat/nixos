@@ -10,10 +10,6 @@
       url = "github:nix-community/lanzaboote/v0.4.3";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
-    vicinae = {
-      url = "github:vicinaehq/vicinae";
-      #inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
   };
 
   outputs = {
@@ -46,20 +42,13 @@
       self = self;
     };
     zen-browser = inputs.zen-browser.packages."${system}".default;
-    vicinae = inputs.vicinae.packages."${system}".default;
-    custom-pkgs = {inherit zen-browser vicinae;};
+    custom-pkgs = {inherit zen-browser;};
   in {
     nixosConfigurations = {
       timber-hearth = nixpkgs.lib.nixosSystem {
         modules = [
           ./systems/timber-hearth
           ./options
-          {
-            nix.settings = {
-              extra-substituters = [ "https://vicinae.cachix.org" ];
-              extra-trusted-public-keys = [ "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc=" ];
-            };
-          }
           inputs.lanzaboote.nixosModules.lanzaboote
         ];
         specialArgs = specialArgs // {inherit custom-pkgs;};

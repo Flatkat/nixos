@@ -71,7 +71,7 @@
     proton-vpn
     bottles
     godot
-    custom-pkgs.vicinae
+    vicinae
     ente-auth
     jetbrains.idea-oss
     ytmdesktop
