@@ -66,7 +66,7 @@
     kdePackages.filelight
     libreoffice
     zapzap
-    bitwarden-desktop #!!!
+    unstable.bitwarden-desktop #!!!
     unstable.bitwarden-cli
     proton-vpn
     bottles
@@ -88,7 +88,6 @@
     maven
     gradle
     javaPackages.compiler.temurin-bin.jdk-21
-    xmlcopyeditor
 
     #Gayms :3
     eden
