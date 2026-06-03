@@ -15,12 +15,13 @@ in {
     programs.niri.enable = true;
 
     services.gnome.gcr-ssh-agent.enable = mkDefault false;
-
+    /*
     services.greetd.enable = true;
     services.greetd.settings.default_session = {
       command = "${pkgs.tuigreet}/bin/tuigreet --user-menu --remember --asterisks --time";
       user = "greeter";
     };
+    */
     environment.systemPackages = [
       unstable.onagre
       pkgs.xwayland-satellite

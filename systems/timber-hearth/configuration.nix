@@ -41,6 +41,7 @@
     "electron-39.8.10" #!WHY DONT YOU WORK YOU WERE WORKING BEFORE
   ];
 
+  services.displayManager.sddm.enable = true; #TODO: Move displaymanagers to separate modules
 
   services.syncthing.enable = false;
   services.syncthing.user = "flatkat";
@@ -279,6 +280,8 @@
     enable = true;
     package = pkgs.mariadb;
   };
+
+  programs.virt-manager.enable = true;
 
   networking.networkmanager.enable = true;
 
