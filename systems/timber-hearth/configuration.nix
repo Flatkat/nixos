@@ -32,6 +32,7 @@
 
       # Desktop enviroments
       plasma.enable = true;
+      niri.enable = true;
     };
   };
 
