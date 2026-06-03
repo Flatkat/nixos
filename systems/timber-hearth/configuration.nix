@@ -30,7 +30,7 @@
       aw.enable = true;
       appimage.enable = true;
 
-      # Desktop enviroments
+      # Desktop environments
       plasma.enable = true;
       niri.enable = true;
     };
@@ -42,6 +42,7 @@
   ];
 
   services.displayManager.sddm.enable = true; #TODO: Move displaymanagers to separate modules
+  security.pam.services.environment.kwallet.enable = true;
 
   services.syncthing.enable = false;
   services.syncthing.user = "flatkat";
@@ -83,6 +84,7 @@
     fontforge-gtk
     inkscape
     android-studio
+    qemu
 
     # Need for class
     unstable.mysql-workbench
@@ -282,6 +284,7 @@
   };
 
   programs.virt-manager.enable = true;
+  virtualisation.libvirtd.enable = true;
 
   networking.networkmanager.enable = true;
 
