@@ -87,7 +87,7 @@
     qemu
 
     # Need for class
-    unstable.mysql-workbench
+    mysql-workbench
     python314
     maven
     gradle
@@ -280,7 +280,7 @@
 
   services.mysql = {
     enable = true;
-    package = pkgs.mariadb;
+    package = pkgs.mysql84;
   };
 
   programs.virt-manager.enable = true;
