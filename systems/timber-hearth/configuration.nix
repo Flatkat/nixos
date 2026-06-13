@@ -74,7 +74,7 @@
     proton-vpn
     bottles
     godot
-    vicinae
+    unstable.vicinae
     ente-auth
     jetbrains.idea-oss
     ytmdesktop
