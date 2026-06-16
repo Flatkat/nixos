@@ -69,7 +69,7 @@
     kdePackages.filelight
     libreoffice
     zapzap
-    #bitwarden-desktop #!!!
+    bitwarden-desktop #!!!
     unstable.bitwarden-cli
     proton-vpn
     bottles
@@ -85,6 +85,7 @@
     inkscape
     android-studio
     qemu
+    obs-studio
 
     # Need for class
     mysql-workbench
