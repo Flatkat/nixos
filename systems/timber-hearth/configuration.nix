@@ -35,7 +35,7 @@
       niri.enable = true;
     };
   };
-
+  
   #!Remove whenever bitwarden-desktop updates
   nixpkgs.config.permittedInsecurePackages = [
     "electron-39.8.10" #!WHY DONT YOU WORK YOU WERE WORKING BEFORE
@@ -160,6 +160,8 @@
     gotop
     zoxide
   ];
+
+  services.cloudflare-warp.enable = true;
 
   nixpkgs.config.android_sdk.accept_license = true;
 
