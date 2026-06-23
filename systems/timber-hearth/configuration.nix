@@ -122,6 +122,12 @@
       mupen64plus
     ]))
 
+    # Discord
+    (discord.override {
+      withOpenASAR = true;
+      withVencord = true;
+    })
+
     # KDE Plasma
     kdePackages.krohnkite
     kdePackages.applet-window-buttons6
