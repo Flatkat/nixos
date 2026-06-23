@@ -13,8 +13,9 @@ in {
   };
   config = mkIf cfg.enable {
     programs.firefox.enable = true;
-    programs.firefox.package = custom-pkgs.zen-browser;
+    programs.firefox.package = pkgs.firefox;
     environment.systemPackages = [
+      custom-pkgs.zen-browser
       pkgs.firefox-devedition
     ];
   };
