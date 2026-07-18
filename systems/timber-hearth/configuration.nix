@@ -85,6 +85,8 @@
     inkscape
     android-studio
     qemu
+    quickemu
+    quickgui
     obs-studio
 
     # Need for class
