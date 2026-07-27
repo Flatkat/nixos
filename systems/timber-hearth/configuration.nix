@@ -87,6 +87,7 @@
     qemu
     quickemu
     quickgui
+    spice
     obs-studio
 
     # Need for class
