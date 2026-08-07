@@ -76,7 +76,7 @@
     godot
     unstable.vicinae
     ente-auth
-    jetbrains.idea-oss
+    jetbrains.idea
     ytmdesktop
     kdePackages.kamoso
     unstable.beeper
