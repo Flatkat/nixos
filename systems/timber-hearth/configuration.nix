@@ -54,7 +54,6 @@
 
     # Propietary Apps
     obsidian
-    spotify
 
     # Apps
     vlc
@@ -89,6 +88,7 @@
     quickgui
     spice
     obs-studio
+    unstable.dorion
 
     # Need for class
     mysql-workbench
@@ -110,7 +110,7 @@
     gale
     unstable.prismlauncher
     unstable.heroic
-    rpcs3
+    rpcs3 #???
     unstable.itch
     rusty-psn-gui
     cemu
