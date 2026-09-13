@@ -75,8 +75,8 @@
     godot
     unstable.vicinae
     ente-auth
-    jetbrains.idea
-    ytmdesktop
+    jetbrains.idea #!!!
+    pear-desktop
     kdePackages.kamoso
     unstable.beeper
     openutau
