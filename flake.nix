@@ -10,6 +10,10 @@
       url = "github:nix-community/lanzaboote/v0.4.3";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+    DuckGameRebuilt = {
+      url = "github:klof44/DuckGameRebuilt-Nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -42,7 +46,11 @@
       self = self;
     };
     zen-browser = inputs.zen-browser.packages."${system}".default;
-    custom-pkgs = {inherit zen-browser;};
+    duck-game-rebuilt = inputs.DuckGameRebuilt.packages."${system}".default;
+    custom-pkgs = {
+      inherit zen-browser;
+      inherit duck-game-rebuilt;
+      };
   in {
     nixosConfigurations = {
       timber-hearth = nixpkgs.lib.nixosSystem {

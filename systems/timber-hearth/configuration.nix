@@ -117,6 +117,9 @@
     melonds
     sgdboop
     gamescope
+    unstable.wheelwizard
+
+    custom-pkgs.duck-game-rebuilt
 
     # Retroarch
     (retroarch.withCores (cores: with cores; [
