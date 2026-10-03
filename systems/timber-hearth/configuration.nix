@@ -96,6 +96,7 @@
     maven
     gradle
     javaPackages.compiler.temurin-bin.jdk-21
+    dia
 
     #Gayms :3
     eden
