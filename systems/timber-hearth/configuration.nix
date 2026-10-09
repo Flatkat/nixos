@@ -88,7 +88,7 @@
     quickgui
     spice
     obs-studio
-    unstable.dorion
+    #unstable.dorion
 
     # Need for class
     mysql-workbench
@@ -111,7 +111,7 @@
     gale
     unstable.prismlauncher
     unstable.heroic
-    rpcs3 #???
+    rpcs3 #! replace w AppImage, make a flake repackaging the AppImage maybe
     unstable.itch
     rusty-psn-gui
     cemu
