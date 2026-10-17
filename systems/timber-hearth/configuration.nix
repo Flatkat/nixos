@@ -89,6 +89,7 @@
     spice
     obs-studio
     #unstable.dorion
+    gearlever
 
     # Need for class
     mysql-workbench
