@@ -112,7 +112,7 @@
     gale
     unstable.prismlauncher
     unstable.heroic
-    rpcs3 #! replace w AppImage, make a flake repackaging the AppImage maybe
+    unstable.rpcs3 #! replace w AppImage, make a flake repackaging the AppImage maybe
     unstable.itch
     rusty-psn-gui
     cemu
