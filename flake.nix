@@ -6,6 +6,9 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
+    helium-browser = {
+      url = "github:oxcl/nix-flake-helium-browser";
+    };
     lanzaboote = {
       url = "github:nix-community/lanzaboote/v0.4.3";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -46,9 +49,11 @@
       self = self;
     };
     zen-browser = inputs.zen-browser.packages."${system}".default;
+    helium-browser = inputs.helium-browser.packages."${system}".default;
     duck-game-rebuilt = inputs.DuckGameRebuilt.packages."${system}".default;
     custom-pkgs = {
       inherit zen-browser;
+      inherit helium-browser;
       inherit duck-game-rebuilt;
       };
   in {

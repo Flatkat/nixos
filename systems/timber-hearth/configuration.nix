@@ -90,6 +90,7 @@
     obs-studio
     #unstable.dorion
     gearlever
+    custom-pkgs.helium-browser
 
     # Need for class
     mysql-workbench
