@@ -13,10 +13,9 @@ in {
   };
   config = mkIf cfg.enable {
     programs.firefox.enable = true;
-    programs.firefox.package = pkgs.librewolf;
+    programs.firefox.package = pkgs.firefox;
     environment.systemPackages = [
       custom-pkgs.zen-browser
-      pkgs.firefox
       pkgs.firefox-devedition
     ];
   };
