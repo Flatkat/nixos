@@ -61,9 +61,9 @@
     unstable.vesktop
     thunderbird
     gimp3
-    vscode-fhs
+    unstable.vscode-fhs #! it broke lol
     qbittorrent
-    unstable.ungoogled-chromium
+    ungoogled-chromium
     unstable.signal-desktop
     kdePackages.filelight
     libreoffice
@@ -130,12 +130,6 @@
       gpsp
       mupen64plus
     ]))
-
-    # Discord
-    (discord.override {
-      withOpenASAR = true;
-      withVencord = true;
-    })
 
     # KDE Plasma
     kdePackages.krohnkite
