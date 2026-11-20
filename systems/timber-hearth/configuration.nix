@@ -101,7 +101,7 @@
     dia
 
     #Gayms :3
-    eden
+    unstable.eden
     pcsx2
     unstable.dolphin-emu
     #emulationstation-de
